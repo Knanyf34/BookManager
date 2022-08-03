@@ -19,3 +19,8 @@ if __name__ == '__main__':
         print('Gholam')
     else:
         print('Ghamar')
+
+
+    # print(b1 + b2)
+    # Python Programming, Java Spring
+    # 1200
