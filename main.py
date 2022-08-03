@@ -10,6 +10,8 @@ if __name__ == '__main__':
     b3 = Book('Java Spring', 1000)
 
     print(b1)
+    # print('b1 title: '+b1.get_title())
+    # print('b1 pages: ' + str(b1.get_pages()))
     print(b2)
     print(b3)
 

@@ -20,3 +20,6 @@ class Book:
 
     def get_pages(self):
         return self.__pages
+
+    def __str__(self):
+        return self.get_title() + ' => ' + str(self.get_pages())
