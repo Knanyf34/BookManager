@@ -23,3 +23,9 @@ class Book:
 
     def __str__(self):
         return self.get_title() + ' => ' + str(self.get_pages())
+
+    def __eq__(self, other):
+        if self.get_title() == other.get_title() and self.get_pages() == other.get_pages():
+            return True
+        else:
+            return False
