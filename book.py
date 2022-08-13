@@ -13,6 +13,11 @@ class Book:
         return self.__title
 
     def set_pages(self, pages):
+        if (type(pages) != int):
+            raise Exception('pages have a bad type format!')
+            # print('Chekar mikoni BABA!')
+            # return
+
         if pages > 1:
             self.__pages = pages
         else:
