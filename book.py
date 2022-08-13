@@ -13,15 +13,18 @@ class Book:
         return self.__title
 
     def set_pages(self, pages):
-        if (type(pages) != int):
-            raise Exception('pages have a bad type format!')
-            # print('Chekar mikoni BABA!')
-            # return
+        try:
+            if pages > 1:
+                self.__pages = pages
+            else:
+                raise Exception('Page count is NOT valid')
+        except TypeError as te:
+            print(te)
+            print('Boro BABA!... type Erorry!!!')
+        except Exception as ex:
+            print(ex)
+            print("BAD!...")
 
-        if pages > 1:
-            self.__pages = pages
-        else:
-            print('pages most be more than 1')
 
     def get_pages(self):
         return self.__pages

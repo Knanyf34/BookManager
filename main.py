@@ -33,4 +33,6 @@ if __name__ == '__main__':
 
     # Exception
     b1.set_pages('Jafar')
+    b1.set_pages(-100)
+    b1.set_pages(50)
     print(b1)
