@@ -18,12 +18,8 @@ class Book:
                 self.__pages = pages
             else:
                 raise Exception('Page count is NOT valid')
-        except TypeError as te:
-            print(te)
-            print('Boro BABA!... type Erorry!!!')
-        except Exception as ex:
-            print(ex)
-            print("BAD!...")
+        except Exception as error:
+            raise Exception(error)
 
 
     def get_pages(self):

@@ -32,7 +32,16 @@ if __name__ == '__main__':
     # Search List!
 
     # Exception
-    b1.set_pages('Jafar')
-    b1.set_pages(-100)
+    try:
+        b1.set_pages(-100)
+        b1.set_pages('Jafar')
+        # b1.set_pages(55)
+    except Exception as jafar:
+        print(jafar)
+    else:
+        print("Hooooraaaa!")
+    finally:
+        print("Vel kon BABA...")
+
     b1.set_pages(50)
     print(b1)
